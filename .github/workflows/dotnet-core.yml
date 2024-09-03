@@ -81,7 +81,7 @@ jobs:
     name: Publish Unit Test Results
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
       - name: Publish Unit Test Results
@@ -98,7 +98,7 @@ jobs:
     - name: Extract Branch Name
       run: echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
     - name: Download Artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         path: artifacts
     - name: Get badge details
@@ -144,7 +144,7 @@ jobs:
 
       - if: steps.changed-more.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -204,7 +204,7 @@ jobs:
 
       - if: steps.changed-patch.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -264,7 +264,7 @@ jobs:
 
       - if: steps.changed-path.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -324,7 +324,7 @@ jobs:
 
       - if: steps.changed-pointer.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -384,7 +384,7 @@ jobs:
 
       - if: steps.changed-schema.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -449,7 +449,7 @@ jobs:
 
       - if: steps.changed-schema-gen.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -509,7 +509,7 @@ jobs:
 
       - if: steps.changed-schema-data.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -569,7 +569,7 @@ jobs:
 
       - if: steps.changed-schema-openapi.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -629,7 +629,7 @@ jobs:
 
       - if: steps.changed-schema-uniquekeys.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -689,7 +689,7 @@ jobs:
 
       - if: steps.changed-schema-datageneration.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
@@ -749,7 +749,7 @@ jobs:
 
       - if: steps.changed-logic.outputs.changed == 'true'
         name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
 
